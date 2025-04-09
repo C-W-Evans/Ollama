@@ -1,0 +1,46 @@
+index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TinyLlama Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>Conversations</h2>
+                <button id="newConversationButton">New</button>
+            </div>
+            <div class="conversation-list" id="conversationList">
+                <!-- Conversations will be listed here -->
+            </div>
+        </div>
+        
+        <div class="chat-container">
+            <div class="chat-header">
+                <h3 id="currentConversationTitle">New Conversation</h3>
+                <div class="chat-actions">
+                    <button id="themeToggleButton" class="theme-toggle">
+                        <i class="fas fa-moon theme-icon" id="themeIcon"></i>
+                        <span id="themeText">Dark Mode</span>
+                    </button>
+                    <button id="renameButton">Rename</button>
+                    <button id="deleteButton">Delete</button>
+                </div>
+            </div>
+            <div class="chat-display" id="chatDisplay"></div>
+            <div class="generating-indicator" id="generatingIndicator"></div>
+            <div class="input-area">
+                <input type="text" id="messageInput" placeholder="Type your message...">
+                <button id="sendButton">Send</button>
+                <button id="stopButton" disabled>Stop</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
